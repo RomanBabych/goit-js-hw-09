@@ -89,11 +89,9 @@ images.forEach(image => {
 
 gallery.insertAdjacentHTML('beforeend', galleryItemHtml);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const gallery = document.querySelector('.gallery');
-  const lightbox = new SimpleLightbox('.gallery a', {
-    captionsData: 'alt',
-    captionDelay: 250,
-    overlayOpacity: 3,
-  });
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+  overlayOpacity: 3,
 });
+
